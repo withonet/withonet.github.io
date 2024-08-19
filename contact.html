@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONTACT | elliot allen</title>
+    <link href="resources\index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />      
+    <script src="resources\index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+</head>
+
+<body>
+
+    <header id="header">
+
+        <h1><a href="index.html" id="name">ELLIOT ALLEN <span class="secondary">| DIRECTOR</span></a></h1>
+    
+        <nav class="menu">
+            <a href="about.html" class="navlink">ABOUT</a> | <a href="work.html" class="navlink">WORK</a> | <a href="contact.html" class="navlink">CONTACT</a>
+        </nav>
+
+    </header>
+
+    <main id="contactMain">
+        <div class="border">
+            <h1>GET IN TOUCH</h1>
+        </div>
+
+        <div id="emailForm">
+
+                <h2 class="formTitle">Send me an email!</h2> 
+                <label for="contactName" class="nameLabel">Name:<br>
+                    <input name="Name" type="text" id="contactName" placeholder="Your name">
+                </label>
+                <label for="contactEmail" class="emailLabel">Email:<br>
+                    <input name="E-mail" type="email" id="contactEmail" placeholder="YourEmail@gmail.com">
+                </label>
+                <label for="contactMessage" class="messageLabel">Message:<br>
+                    <textarea name="Message" id="contactMessage" placeholder="Your message"></textarea>
+                </label>
+                <button type="submit" id="emailButton" onclick="sendEmail()" formtarget="_blank">Send! <i class="iconoir-send-mail"></i></button>
+
+            </form>
+        </div>
+    </main>
+
+
+</body>
+</html>
