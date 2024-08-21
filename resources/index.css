@@ -94,8 +94,8 @@ a:hover {
 }
 
 #elliotPic {
-    max-width: var(--slideshow-width);
-    height: var(--gallery-height);
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -149,6 +149,27 @@ a:hover {
 .home-menu h2 {
     font-size: 2.5rem;
 }
+
+@media (max-width: 800px) {
+    #index-main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 12vh;
+        margin-top: 12vh;
+        height: 200vh;
+        overflow: visible;
+    }
+
+    #slideshow, #galleryWindow {
+        width: 100vw;
+    }
+
+    .home-menu {
+        width: 100vw;
+    }
+}
+
 
 /*#upcoming {
     width: 90vw;
@@ -542,3 +563,4 @@ a:hover {
     width: 100%;
     border: 1px solid var(--dark-accent);
 }
+
