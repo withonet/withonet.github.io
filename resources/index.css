@@ -351,8 +351,31 @@ a:hover {
 }*/
 
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
     .work {
+        display: grid;
+        grid-template-areas:
+            "dirHead dirHead"
+            "left1 right1"
+            "left2 right2"
+            "left3 right3"
+            "desHead desHead"
+            "left4 right4"
+            "left5 right5";      
+        grid-template-columns: [col1] 50vw [col2] 50vw;
+        grid-template-rows: [rowhalf] 80px [row1] 80vh [row2] 80vh [row3] 80vh [row2half] 80px [row4] 80vh [row5] 80vh; 
+    }
+
+    .warped {grid-area: left1;}
+    .warehouse {grid-area: right1;}
+    .uhhwtop {grid-area: left2;}
+    .aph {grid-area: right2;}
+    .tcbp {grid-area: left4;}
+    .vfr {grid-area: right4;}
+    .k2tog {grid-area: left5;}
+
+
+    /*    .work {
         display: flex;
         flex-direction: column;
         margin: 14vh 0;
@@ -364,7 +387,7 @@ a:hover {
     }
     .project {
         height: 450px;
-    }
+    }*/
 }
 
 /*----------PROJECTS----------*/
