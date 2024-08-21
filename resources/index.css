@@ -151,18 +151,24 @@ a:hover {
 }
 
 @media (max-width: 1200px) {
+    #header {
+        height: 100px;
+    }
+    
     #index-main {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        top: 12vh;
-        margin-top: 12vh;
+        margin-top: 100px;
         height: 200vh;
-        overflow: visible;
     }
 
-    #slideshow, #galleryWindow {
+    #slideshow, #galleryWindow, #buttonContainer {
         width: 100vw;
+    }
+
+    .galleryButtons {
+        font-size: 16px;
     }
 
     .home-menu {
