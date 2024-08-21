@@ -196,7 +196,6 @@ a:hover {
     margin: 14vh 5%;
     gap: 50px;
     height: 80vh;
-    border: 2px solid red;
 }
 
 #headshotLabel {
@@ -207,7 +206,6 @@ a:hover {
     justify-content: center;
     text-align: center;
     font-size: 0.8em;
-    border: 2px solid lime;
 }
 
 #headshot {
