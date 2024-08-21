@@ -327,13 +327,14 @@ a:hover {
 }
 
 /*ORDER OF TILES*/
-.warped {grid-area: left1;}
-.warehouse {grid-area: mid1;}
-.uhhwtop {grid-area: right1;}
+.ati {grid-area: left1}
+.warped {grid-area: mid1;}
+.warehouse {grid-area: right1;}
+.uhhwtop {grid-area: left2;}
 .aph {grid-area: mid2;}
 .tcbp {grid-area: left3;}
-.vfr {grid-area: mid3;}
-.k2tog {grid-area: right3;}
+.wtwc {grid-area: mid3;}
+.vfr {grid-area: right3;}
 
 
 /*.more {
