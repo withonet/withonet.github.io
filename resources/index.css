@@ -12,6 +12,9 @@
     --med-accent: hsl(326, 100%, 81%);
     --dark-accent: hsl(325, 56%, 39%);
     --overlay: hsla(325, 73.3%, 94.1%, 0.8);
+
+    --new-light: rgb(252, 224, 233);
+    --name: #c00474;
 }
 
 body {
@@ -24,16 +27,28 @@ body {
     top: 0;
     width: 100vw;
     /**replace header eventually**/
-    background-color: white;
+    background-color: rgb(252, 224, 233);
+    border-bottom:2px solid var(--med-accent);
     background-size: cover;
     text-align: center;
     height: 12vh;
-    border-bottom: 1px solid black;
+    }
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    background-color: var(--light-accent);
+    height: 5vh;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
     }
 
 #name {
     font-size: 30px; 
-    color: #e40da0;
+    color: #c00474;
     text-decoration: none;
 }
 
@@ -246,9 +261,10 @@ a:hover {
         "left1 mid1 right1"
         "left2 mid2 right2"
         "desHead desHead desHead"
-        "left3 mid3 right3";        
+        "left3 mid3 right3"
+        "left4 mid4 right4";        
     grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;
-    grid-template-rows: [rowhalf] 80px [row1] 50vh [row2] 50vh [row2half] 80px [row3] 50vh; 
+    grid-template-rows: [rowhalf] 80px [row1] 50vh [row2] 50vh [row2half] 80px [row3] 50vh [row4] 50vh; 
 }
 
 .border {
@@ -326,7 +342,7 @@ a:hover {
     color: black;
 }
 
-/*ORDER OF TILES*/
+/*ORDER OF TILES
 .ati {grid-area: left1}
 .warped {grid-area: mid1;}
 .warehouse {grid-area: right1;}
@@ -335,6 +351,7 @@ a:hover {
 .tcbp {grid-area: left3;}
 .wtwc {grid-area: mid3;}
 .vfr {grid-area: right3;}
+.monotonist {grid-area: mid4;}*/
 
 
 /*.more {
@@ -353,25 +370,18 @@ a:hover {
 @media (max-width: 1200px) {
     .work {
         display: grid;
-        grid-template-areas:
+        /*grid-template-areas:
             "dirHead dirHead"
             "left1 right1"
             "left2 right2"
             "left3 right3"
             "desHead desHead"
             "left4 right4"
-            "left5 right5";      
+            "left5 right5";    */  
         grid-template-columns: [col1] 50vw [col2] 50vw;
         grid-template-rows: [rowhalf] 80px [row1] 80vh [row2] 80vh [row3] 80vh [row2half] 80px [row4] 80vh [row5] 80vh; 
     }
 
-    .warped {grid-area: left1;}
-    .warehouse {grid-area: right1;}
-    .uhhwtop {grid-area: left2;}
-    .aph {grid-area: right2;}
-    .tcbp {grid-area: left4;}
-    .vfr {grid-area: right4;}
-    .k2tog {grid-area: left5;}
 
 
     /*    .work {
@@ -457,8 +467,9 @@ a:hover {
     font-size: 1.5em;
     text-transform: uppercase;
     font-style: italic;
-    color: #1aa30e;
-    background-color: #e2fbe0;
+    color: var(--name);
+    background-color: var(--new-light);
+    border: 2px solid var(--med-accent);
     font-weight: bold;
 }
 
@@ -471,8 +482,9 @@ a:hover {
     font-size: 2.5em;
     font-style: italic;
     color: #e40da0;
-    padding: 1% 0;
+    padding: 1% 0 0 0;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .producer {
@@ -513,6 +525,7 @@ a:hover {
 #workNavButts {
     display: flex;
     justify-content: space-between;
+    /*margin-bottom: 7vh;*/
 }
 
 #nextLink, #prevLink {
@@ -529,6 +542,7 @@ a:hover {
 
 #contactMain {
     margin-top: 14vh;
+    min-height: 81vh;
 }
 
 #contactMain .border {
