@@ -27,7 +27,7 @@ body {
     top: 0;
     width: 100vw;
     /**replace header eventually**/
-    background-color: rgb(252, 224, 233);
+    background-color: skyblue/*rgb(252, 224, 233)*/;
     border-bottom:2px solid var(--med-accent);
     background-size: cover;
     text-align: center;
