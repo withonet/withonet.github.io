@@ -368,7 +368,7 @@ a:hover {
 }*/
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .work {
         display: grid;
         grid-template-areas:
@@ -548,7 +548,7 @@ a:hover {
     color: #e40da0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .project-page {
         flex-direction: column; 
         margin-top: 12vh;
@@ -674,3 +674,4 @@ a:hover {
     }
 
 }
+
