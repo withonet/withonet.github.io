@@ -377,7 +377,7 @@ a:hover {
             "left2 right2"
             "left3 right3"
             "desHead desHead"
-            "left4 right4"
+            "left4 right4" 
             "left5 right5";    
         grid-template-columns: [col1] 45vw [col2] 45vw;
         grid-template-rows: [rowhalf] 10vh [row1] 45vw [row2] 45vw [row3] 45vw [row2half] 10vh [row4] 45vw [row5] 45vw; 
