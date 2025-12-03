@@ -370,6 +370,7 @@ a:hover {
 
 @media (max-width: 1200px) {
     .work {
+        border: 1px solid green;
         display: grid;
         grid-template-areas:
             "dirHead dirHead"
@@ -674,4 +675,5 @@ a:hover {
     }
 
 }
+
 
